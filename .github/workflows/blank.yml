@@ -95,5 +95,7 @@ jobs:
       run: |
         artifactName=$(ls *.jar | head -1)
         mvn deploy -DmuleDeploy -Dap.clientid=5ef83a5822a6452283cd225af398be44 \
-        -Dap.clientsecret=c94fe225d1464fb592B161C7670498E1
+        -Dap.clientsecret=c94fe225d1464fb592B161C7670498E1 \
+        -Ddeployment.name="cicd-msg-JM1507" \
+        -Dmessage="Welcome from CICD"
   
